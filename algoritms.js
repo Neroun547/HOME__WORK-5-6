@@ -28,7 +28,7 @@ console.log(factorial(1));
 function fib(n) {
     if (n === 1) {
         return 0;
-    } else if (n === 2 && n === 3) {
+    } else if (n === 2 || n === 3) {
         return 1;
     }
     let a = 1;
