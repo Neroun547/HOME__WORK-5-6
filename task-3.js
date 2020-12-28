@@ -20,7 +20,7 @@ for (let i = 0; i < btn.length; i++) {
         let select = false;
         select = true;
 
-        del[i].style.display = 'block';
+        del[i].style.display = 'flex';
 
         btn[i].addEventListener('mouseup', function (e) {
             flag = false;

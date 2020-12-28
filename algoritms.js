@@ -133,16 +133,7 @@ function missing(el){
     });
     let arrTest = [];
     let result = [];
-    let theBigestNum = arr[0];
-    for(let i = 0; i < arr.length; i++){
-        for(let j = 0; j < arr.length; j++){
-            if(arr[i] >= arr[j] && arr[i] >= theBigestNum){
-                theBigestNum = arr[i];
-            }else if(arr[j] >= arr[i] && arr[j] >= theBigestNum){
-                theBigestNum = arr[j];
-            }
-        }
-    }
+    let theBigestNum = arr[arr.length-1];
     for(let i = 1; i <= theBigestNum; i++){
         arrTest.push(i);
     }
@@ -159,11 +150,14 @@ function missing(el){
                 result.push(arrTest[i]);
             }
             flag = false;
+    }
+    if(result.length === 0){
+        return undefined;
     }   
     return result;
 }
 
-console.log(missing([2, 5, 6]));
+console.log(missing([2, 5, 6]), missing([]));
 
 //Balanced
 

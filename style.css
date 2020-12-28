@@ -25,6 +25,8 @@ body{
 }
 
 .btn{
+    order: 0;
+    display: flex;
     padding: 5px 15px;
     border: none;
     cursor: pointer;
